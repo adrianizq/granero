@@ -1,0 +1,41 @@
+#Granero
+01;Vencedor;Mocoa
+#Articulos
+.Cod 	Articulo		categoria	cantidad	valorcompra	
+01;arroz;0A;500;2300		
+02;café;0A;300;2500
+03;frijol;0A;400;3700
+04;sal;0A;200;1000
+05;jabon;0B;150;800
+06;betun;0B;300;900		
+07;avena;0A;400;2800		
+08;trigo;0A;300;1800
+09;panela;0A;200;1500
+10;limpido;0B;300;1200
+11;avena;0A;50;800
+12;arveja;0A;50;1000
+13;cocacola;0C;100;1000
+14;yogurt;0C;20;800
+#Categorias
+.codCat	Categoria	ganancia%
+0A;Alimentos;10
+0B;Aseo;15
+0C;Bebidas;12
+#Ventas
+.CodVenta CodArticulo 	cantidad	
+0-A;01;4		
+0-A;03;3		
+0-A;07;2		
+0-A;09;3		
+0-A;05;2		
+0-B;01;5
+0-B;05;4
+0-C;08;3
+0-C;09;2
+0-C;10;4
+0-D;02;4
+0-D;05;3
+0-B;03;5
+0-E;12;4
+0-E;13;3
+0-E;14;5
