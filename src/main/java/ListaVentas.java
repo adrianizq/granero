@@ -25,15 +25,19 @@ public class ListaVentas {
     }
 
     public static Venta buscar(String codigo){
+        Venta ventaVacia = new Venta();
+        ventaVacia.setCodigo("0-0");
+        ventaVacia.setArticulo(new Articulo());
+        ventaVacia.setCantidad(0);
         for(Venta v:listaVentas){
-            if(v.getCodigo()==codigo){
+            if(codigo.compareTo(v.getCodigo())==0){
                 return v;
             }
         }
-        return null;
+        return ventaVacia;
     }
 
-    public static void reportarVentas(){
+    public  void reportarVentas(){
         String codigo;
         codigo=listaVentas.get(0).getCodigo(); //capturé el codigo de la 1era venta
         float totalVenta = 0;

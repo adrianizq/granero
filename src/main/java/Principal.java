@@ -13,10 +13,17 @@ public class Principal {
       leerArchivo.leer(lArticulos, lCategorias, lVentas);
 
         //ordenar las ventas por el codigo
-        Collections.sort(lVentas.getListaVentas(),new Comparador());
+        //Collections.sort(lVentas.getListaVentas(),new Comparador());
 
 
-        System.out.println( ListaCategorias.buscar("0A"));
+        //lCategorias.reportarCategorias();  //bien
+        //Categoria cat = lCategorias.buscar("0A"); //bien
+        //System.out.println(cat.getCodigo() + " " + cat.getCategoria() + " " + cat.getGanancia());
+
+        //Articulo art = lArticulos.buscar("01");  //bien
+        //System.out.println(art.getCodigo() + " " + art.getArticulo());
+
+        lVentas.reportarVentas();
 
 
 

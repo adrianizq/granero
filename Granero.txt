@@ -1,5 +1,10 @@
 #Granero
 01;Vencedor;Mocoa
+#Categorias
+.codCat	Categoria	ganancia%
+0A;Alimentos;10
+0B;Aseo;15
+0C;Bebidas;12
 #Articulos
 .Cod 	Articulo		categoria	cantidad	valorcompra	
 01;arroz;0A;500;2300		
@@ -16,11 +21,6 @@
 12;arveja;0A;50;1000
 13;cocacola;0C;100;1000
 14;yogurt;0C;20;800
-#Categorias
-.codCat	Categoria	ganancia%
-0A;Alimentos;10
-0B;Aseo;15
-0C;Bebidas;12
 #Ventas
 .CodVenta CodArticulo 	cantidad	
 0-A;01;4		

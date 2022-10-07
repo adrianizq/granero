@@ -27,13 +27,18 @@ public class ListaArticulos {
     //buscar
     //que tiene que retornar -> un articulo
     //que recibe -> un codigo de articulo String
-    public static Articulo buscar(String codigo){
+    public  Articulo buscar(String codigo){
+        Articulo articuloVacio = new Articulo();
+        articuloVacio.setCodigo("00");
+        articuloVacio.setArticulo("Articulo Vacio");
+        articuloVacio.setCantidad(0);
+        articuloVacio.setValorCompra(0);
         for(Articulo articulo: listaArticulo){
-            if(articulo.getCodigo()==codigo){
+            if(codigo.compareTo(articulo.getCodigo())==0){
                 return articulo;
             }
         }
-        return null;
+        return articuloVacio;
     }
 
 

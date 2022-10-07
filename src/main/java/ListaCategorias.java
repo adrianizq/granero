@@ -27,13 +27,17 @@ public class ListaCategorias {
     //crear un metodo que busque una categoria
     // que debe recibir? el codigo de la categoria ej: "0A" o "0B"
     // que debe retornar la categoria
-    public static Categoria buscar(String codigo){
+    public  Categoria buscar(String codigo){
+        Categoria catVacia = new Categoria();
+        catVacia.setCodigo("000");
+        catVacia.setCategoria("Categoria Vacia");
+        catVacia.setGanancia(0);
         for(Categoria cat:listaCategoria){
-            if (cat.getCodigo()==codigo){
+            if (cat.getCodigo().compareTo(codigo)==0){
                 return cat;
             }
         }
-        return null;
+        return catVacia;
     }
 
     public static void reportarCategorias(){

@@ -63,17 +63,18 @@ public class LeerArchivo {
                                 categoria = new Categoria(pc1.toString(), pc2.toString(), Float.parseFloat(pc3.toString()));
                                 //System.out.println(categoria.getCodigo() + " " + categoria.getCategoria());
                                 lCategorias.agregar(categoria);
+                                //System.out.println(categoria.getCodigo() + " " + categoria.getCategoria() + " " + categoria.getGanancia()); //bien
                             }// fin de else if es categoari
                             else if (apar == 2 && i > 0) {//Cuando es articulos
                                 asignar_cadena(c, pc1, pc2, pc3, pc4, pc5);
-                                articulo = new Articulo(pc1.toString(), pc2.toString(), ListaCategorias.buscar(pc3.toString()), Integer.parseInt(pc4.toString()), Float.parseFloat(pc5.toString()));
+                                articulo = new Articulo(pc1.toString(), pc2.toString(), lCategorias.buscar(pc3.toString()), Integer.parseInt(pc4.toString()), Float.parseFloat(pc5.toString()));
                                 lArticulos.agregar(articulo);
-                                System.out.println(articulo.getCodigo() + " " + articulo.getArticulo() + " " + articulo.getCategoria());
+                                //System.out.println(articulo.getCodigo() + " " + articulo.getArticulo() + " " + articulo.getCategoria());
 
                             }//del if es un articulo
                             else if (apar == 3 && i > 0) {//Cuando es venta
                                 asignar_cadena(c, pc1, pc2, pc3);
-                                venta = new Venta(pc1.toString(), ListaArticulos.buscar(pc2.toString()), Integer.parseInt(pc3.toString()));
+                                venta = new Venta(pc1.toString(), lArticulos.buscar(pc2.toString()), Integer.parseInt(pc3.toString()));
                                 lVentas.agregar(venta);
                             }// fin de else if es venta
                         } //del else
